@@ -5,13 +5,12 @@ The Machine learning project where user express there emotion and classify at th
 
 Data source:
 
-([emotions] (https://www.kaggle.com/datasets/nelgiriyewithana/emotions))
+[emotions](https://www.kaggle.com/datasets/nelgiriyewithana/emotions)
 
 Notebook:
 
-([kaggle|emotion-analysis-and-model] (https://www.kaggle.com/code/nordszamora/emotion-analysis-and-model))
-
-([github|Emotion-Analysis] (https://github.com/nordszamora/DS-ML-projects/blob/main/Emotion-Analysis/Emotions.ipynb))
+[kaggle|emotion-analysis-and-model](https://www.kaggle.com/code/nordszamora/emotion-analysis-and-model)
+[github|Emotion-Analysis](https://github.com/nordszamora/DS-ML-projects/blob/main/Emotion-Analysis/Emotions.ipynb)
 
 #### Note:
 The prediction may encounter a unexpected expression result.
