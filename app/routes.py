@@ -22,7 +22,7 @@ except Exception as e:
 
 try:
     # Connect db for pandas
-    engine = create_engine('mysql://<user>:@<host>:<port>/<database>')
+    engine = create_engine('mysql://<user>:@<host>:<port>/<database>') # Edit
     connection = engine.connect()
     print('Connection to the database was successful.')
     connection.close()
