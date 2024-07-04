@@ -9,9 +9,9 @@ The Machine learning project where user express there emotion and classify at th
 
 #### Notebook:
 
-[Kaggle|emotion-analysis-and-model](https://www.kaggle.com/code/nordszamora/emotion-analysis-and-model)
+[emotion-analysis-and-model](https://www.kaggle.com/code/nordszamora/emotion-analysis-and-model)
 
-[Github|Emotion-Analysis](https://github.com/nordszamora/DS-ML-projects/blob/main/Emotion-Analysis/Emotions.ipynb)
+[Emotion-Analysis](https://github.com/nordszamora/DS-ML-projects/blob/main/Emotion-Analysis/Emotions.ipynb)
 
 ### Note:
 The prediction may encounter a unexpected expression result.
