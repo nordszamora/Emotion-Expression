@@ -10,6 +10,7 @@ Data source:
 Notebook:
 
 ([kaggle|emotion-analysis-and-model] (https://www.kaggle.com/code/nordszamora/emotion-analysis-and-model))
+
 ([github|Emotion-Analysis] (https://github.com/nordszamora/DS-ML-projects/blob/main/Emotion-Analysis/Emotions.ipynb))
 
 #### Note:
