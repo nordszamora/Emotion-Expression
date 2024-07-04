@@ -13,7 +13,7 @@ The Machine learning project where user express there emotion and classify at th
 
 [github|Emotion-Analysis](https://github.com/nordszamora/DS-ML-projects/blob/main/Emotion-Analysis/Emotions.ipynb)
 
-#### Note:
+### Note:
 The prediction may encounter a unexpected expression result.
 
 ### Installation:
