@@ -3,13 +3,12 @@
 ### About:
 The Machine learning project where user express there emotion and classify at the following (Sad, Joy, Love, Anger, Fear, Surprice). We use a CNB model for text classification with the accuracy of 88%.
 
-Data source:
-
+####Data source:
 [emotions](https://www.kaggle.com/datasets/nelgiriyewithana/emotions)
 
-Notebook:
-
+####Notebook:
 [kaggle|emotion-analysis-and-model](https://www.kaggle.com/code/nordszamora/emotion-analysis-and-model)
+
 [github|Emotion-Analysis](https://github.com/nordszamora/DS-ML-projects/blob/main/Emotion-Analysis/Emotions.ipynb)
 
 #### Note:
