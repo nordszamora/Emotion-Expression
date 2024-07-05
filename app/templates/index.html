@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Classify text based on emotional states">
+    <meta name="keywords" content="emotional expression, text classification, machine learning, natural language processing, sentiment analysis">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{url_for('static', filename='css/custom.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='image/icon/emoji.png')}}" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <title>Emotion classification & Analysis</title>
+</head>
+    <body>
+     <nav class="navbar bg-info">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../" style="color: #ffffff;">Emotion Expression</a>
+            <div class="navbar-nav p-1">
+              <a class="nav-link custom-nav-link" aria-current="page" href="/dashboard">
+                <i class="bi bi-bar-chart-fill"></i> Dashboard
+              </a>
+            </div>
+        </div>
+     </nav>
+     <div class="container-fluid">
+       <div class="row">
+        <form action="{{url_for('blue_print.predict_emotional_expression')}}" method="post" id="validate" onsubmit="return validate();">
+          <div class="d-flex justify-content-center mt-5">
+            <div class="col-sm-6 col-md-4">
+              <div class="custom-expression-form p-4">
+                <textarea name="expression" class="form-control" rows="3" placeholder="Express your feelings..."></textarea>
+                <button type="submit" class="btn btn-primary mt-3">Express</button>
+      
+                {% if predicted == 0 %}
+                  <div class="mt-3 custom-prediction-result">
+                    <p class="p-2" style="color: #cfcccc;"><span style="color: #0000FF;">Sad</span> - {{ proba }}</p>
+                  </div>
+
+                {% elif predicted == 1 %}
+                  <div class="mt-3 custom-prediction-result">
+                    <p class="p-2" style="color: #cfcccc;"><span style="color: #ffec1e;">Joy</span> - {{ proba }}</p>
+                  </div>
+
+                {% elif predicted == 2 %}
+                  <div class="mt-3 custom-prediction-result">
+                    <p class="p-2" style="color: #cfcccc;"><span style="color: #ff69b4;">Love</span> - {{ proba }}</p>
+                  </div>
+
+                {% elif predicted == 3 %}
+                  <div class="mt-3 custom-prediction-result">
+                    <p class="p-2" style="color: #cfcccc;"><span style="color: #FF0000;">Anger</span> - {{ proba }}</p>
+                  </div>
+
+                {% elif predicted == 4 %}
+                  <div class="mt-3 custom-prediction-result">
+                    <p class="p-2" style="color: #cfcccc;"><span style="color: #800080">Fear</span> - {{ proba }}</p>
+                  </div>
+
+                {% elif predicted == 5 %}
+                  <div class="mt-3 custom-prediction-result">
+                    <p class="p-2" style="color: #cfcccc;"><span style="color: #FFA500;">Surprice</span> - {{ proba }}</p>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </form>
+       </div>
+     </div>
+     <script src="{{url_for('static', filename='js/validate.js')}}"></script>
+    </body>
+</html>
