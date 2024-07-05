@@ -1,5 +1,5 @@
 # Emotional classification & Analysis
-
+![Screenshot (115)](https://github.com/nordszamora/Emotion-Expression/assets/100557534/d738311f-50d1-41ee-a2a5-4cd314acc199)
 ### About:
 The Machine learning project where user express there emotion and classify at the following (Sad, Joy, Love, Anger, Fear, Surprice). We use a CNB model for text classification with the accuracy of 88%.
 
