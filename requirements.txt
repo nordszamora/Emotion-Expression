@@ -4,5 +4,5 @@ mysqlclient==2.2.4
 SQLAlchemy==2.0.30
 nltk==3.8.1
 pandas==2.2.1
-scikit-learn==1.4.1
+scikit-learn==1.4.1.post1
 pytest==8.2.2
